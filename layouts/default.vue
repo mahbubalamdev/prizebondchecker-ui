@@ -113,6 +113,13 @@
 
 <script>
 export default {
+  head() {
+    return {
+        scripts: [
+          { hid: 'adsense', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', defer: true, 'data-ad-client': 'ca-pub-3191573152654002' },
+        ]
+      }
+  },
   data() {
     return {
       profileMenu: false,

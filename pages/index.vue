@@ -16,7 +16,6 @@
           দুঃখিত, কোন ফলাফল পাওয়া যায় নি
         </v-card-text>
       </v-card>
-      <ad/>
       <v-list>
         
         <v-list-group
@@ -94,12 +93,8 @@
 
 <script>
 import { search_prizebond, results } from "@/globals/";
-import Ad from '@/components/Ad.vue'
 
 export default {
-  components: {
-    'ad': Ad
-  },
   methods: {
     search() {
       
