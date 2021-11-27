@@ -21,7 +21,7 @@ export default {
     if (!this.isDev) {
       return {
         scripts: [
-          { hid: 'adsense', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', defer: true, 'data-ad-client': 'ca-pub-81227161XXXXXXXX' },
+          { hid: 'adsense', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', defer: true, 'data-ad-client': 'ca-pub-3191573152654002' },
         ]
       }
     }
