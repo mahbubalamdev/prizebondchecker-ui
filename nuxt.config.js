@@ -35,7 +35,9 @@ export default {
 
   buildModules: ["@nuxtjs/vuetify"],
 
-  modules: ["@nuxtjs/axios", "@nuxtjs/auth-next"],
+  modules: ["@nuxtjs/axios", "@nuxtjs/auth-next", ['@nuxtjs/google-adsense', {
+    id: 'ca-pub-3191573152654002'
+  }]],
 
   axios: {
     baseURL: 'https://api.abol-tabol.com/api/v1'
