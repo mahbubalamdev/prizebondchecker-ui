@@ -3,11 +3,13 @@
     <v-card-text>
       <v-text-field v-model="searchTerm" label="খুঁজে দেখুন" placeholder="০০৭৮৪৩৪,০৩১৬৭৬২" @keyup.enter="search" />
       <v-card v-if="search_result.length > 0">
+        <v-card-text>
         <v-row v-for="(result,i) in search_result" :key="i">
           <v-col>{{result.bond | bengali_number}}</v-col>
           <v-col>{{result.prize}} {{result.amount | bengali_number}} টাকা</v-col>
           <v-col>{{result.draw_number | bengali_number}} তম 'ড্র'({{result.date | bengali_number}})</v-col>
         </v-row>
+        </v-card-text>
       </v-card>
       <v-card v-else>
         <v-card-text>
@@ -105,5 +107,17 @@ export default {
     search_result: [],
     results: results
   }),
+  mounted(){
+    if(this.loggedIn){
+      this.$axios.get("/prizebonds/").then((response) => {
+      this.search_result = search_prizebond(response.data.map((bond) => bond["BondNumber"]).join(","))
+      
+    })}
+  },
+  computed: {
+    loggedIn(){
+      return this.$auth.user
+    }
+  }
 };
 </script>

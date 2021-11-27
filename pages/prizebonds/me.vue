@@ -140,7 +140,6 @@ export default {
       });
       
     });
-    this.bonds.sort((a,b)=>a.number>b.number);
   },
   created() {},
   methods: {
