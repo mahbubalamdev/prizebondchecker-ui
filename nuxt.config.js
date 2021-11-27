@@ -61,8 +61,8 @@ export default {
           maxAge: 60 * 60 * 24 * 30
         },
         responseType: "token",
-        redirectUri: "https://prizebondchecker.netlify.app/login",
-        logoutRedirectUri: "https://prizebondchecker.netlify.app",
+        redirectUri: "https://www.abol-tabol.com/login",
+        logoutRedirectUri: "https://www.abol-tabol.com",
         clientId: "6meu16r4mnhc22sqr1diuknc4o",
         scope: ["email", "openid", "profile"],
         codeChallengeMethod: "S256"
