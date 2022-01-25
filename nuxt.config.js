@@ -47,7 +47,7 @@ export default {
   ],
 
   axios: {
-    baseURL: "https://api.abol-tabol.com/api/v1",
+    baseURL: "https://prizebondapi.abol-tabol.com/api/v1",
   },
 
   auth: {
@@ -55,10 +55,10 @@ export default {
       awsCognito: {
         scheme: "oauth2",
         endpoints: {
-          authorization: "https://prizebondchecker.auth.us-east-1.amazoncognito.com/login",
-          token: "https://prizebondchecker.auth.us-east-1.amazoncognito.com/oauth2/token",
-          userInfo: "https://prizebondchecker.auth.us-east-1.amazoncognito.com/oauth2/userInfo",
-          logout: "https://prizebondchecker.auth.us-east-1.amazoncognito.com/logout",
+          authorization: "https://prizebondauth.auth.us-east-1.amazoncognito.com/login",
+          token: "https://prizebondauth.auth.us-east-1.amazoncognito.com/oauth2/token",
+          userInfo: "https://prizebondauth.auth.us-east-1.amazoncognito.com/oauth2/userInfo",
+          logout: "https://prizebondauth.auth.us-east-1.amazoncognito.com/logout",
         },
         token: {
           property: "access_token",
@@ -70,9 +70,9 @@ export default {
           maxAge: 60 * 60 * 24 * 30,
         },
         responseType: "token",
-        redirectUri: "https://abol-tabol.com/login",
-        logoutRedirectUri: "https://abol-tabol.com",
-        clientId: "6meu16r4mnhc22sqr1diuknc4o",
+        redirectUri: "https://prizebondchecker.mahbubalam.dev/login",
+        logoutRedirectUri: "https://prizebondchecker.mahbubalam.dev",
+        clientId: "4r9jo0ftuuj3ucv0r3f05v3ai7",
         scope: ["email", "openid", "profile"],
         codeChallengeMethod: "S256",
       },
