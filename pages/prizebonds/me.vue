@@ -4,7 +4,7 @@
       <v-card >
         <v-card-text>
           <v-row>
-          <v-text-field v-model="newBond" label="প্রাইজবন্ড নাম্বার" @keyup.enter="addBond" />
+          <v-text-field v-model="newBond" label="Prizebond number" @keyup.enter="addBond" />
                <v-btn
                   class="mx-2"
                   fab
@@ -35,13 +35,13 @@
       <v-toolbar
         flat
       >
-                <v-btn fab color="brown" dark small>{{bonds.length | bengali_number}}</v-btn>
+                <v-btn fab color="brown" dark small>{{bonds.length }}</v-btn>
 
         <v-spacer></v-spacer>
         <v-text-field
           v-model="search"
           append-icon="mdi-magnify"
-          label="খুঁজে দেখুন"
+          label="Search"
           single-line
           hide-details
         ></v-text-field>
@@ -64,13 +64,13 @@
           <v-card>
             <v-card-title>
               <v-row>
-                <v-col cols="12" align="center">আপনি কি প্রাইজবন্ড গুলো মুছে ফেলতে নিশ্চিত?</v-col>
+                <v-col cols="12" align="center">Are you sure to remove the prizebond entries?</v-col>
               </v-row>
             </v-card-title>
             <v-card-text>
               <v-row>
                 <v-col v-for="(bond, i) in selected" :key="i">
-                  {{bond.number | bengali_number}}
+                  {{bond.number }}
                 </v-col>
               </v-row>
             </v-card-text>
@@ -84,17 +84,17 @@
       </v-toolbar>
         </template>
         <template v-slot:item.number="{item}">
-          {{item.number | bengali_number}}
+          {{item.number }}
         </template>
         <template v-slot:item.matches="{item}">
           <v-list two-line flat>
             <v-list-item>
               <v-list-item-content>
                 <v-list-item-subtitle v-for="(match, i) in item.matches" :key="i">
-                  ভাই জিতসেন! {{ match.prize }} {{ match.amount | bengali_number }} টাকা। ড্রঃ
-                  {{ match.draw_number | bengali_number }} তম ({{ match.date | bengali_number }})</v-list-item-subtitle
+                  You have won {{ match.prize }} {{ match.amount  }} BDT on
+                  {{ match.draw_number  }} th Draw! ({{ match.date  }})</v-list-item-subtitle
                 >
-                <v-list-item-subtitle v-if="item.matches.length == 0">পাওয়া যায় নি 😞</v-list-item-subtitle>
+                <v-list-item-subtitle v-if="item.matches.length == 0">Not found 😞</v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
           </v-list>
@@ -106,7 +106,7 @@
       
     </v-col>
     <v-col v-else class="headline" align="center">
-        আপনার প্রাইজবন্ড সংরক্ষণ করতে লগইন করুন
+        Please login to continue
     </v-col>
   </v-row>
 </template>
@@ -124,8 +124,8 @@ export default {
       dialog: false,
       search: "",
       headers: [
-        { text: 'প্রাইজবন্ড', value: 'number' },
-        { text: 'ফলাফল', value: 'matches' },
+        { text: 'Prizebond', value: 'number' },
+        { text: 'Result', value: 'matches' },
       ]
     };
   },

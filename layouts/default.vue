@@ -5,7 +5,7 @@
       dark
       flat >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
-                  <v-toolbar-title>আবোল তাবোল</v-toolbar-title>
+                  <v-toolbar-title>Prize bond</v-toolbar-title>
 
                   <v-spacer></v-spacer>
                    <v-btn icon>
@@ -52,13 +52,13 @@
               <v-list-item-action>
                   <v-icon>mdi-logout</v-icon>
                 </v-list-item-action>
-                লগ আউট
+                Logout
             </v-list-item-title>
           </v-list-item>
         </v-list>
       </v-card>
       </v-menu>
-      <v-btn v-else flat color="cyan" dark elevation="0" @click="login">লগইন</v-btn>
+      <v-btn v-else flat color="cyan" dark elevation="0" @click="login">Login</v-btn>
                   <template v-slot:extension>
                     <v-tabs
                       v-model="tab"
@@ -126,9 +126,9 @@ export default {
       tab: null,
       subTab: null,
       menus: [
-        { title: 'প্রাইজবন্ড ফলাফল', icon: 'mdi-gauge', to:'/'},
+        { title: 'Prizebond results', icon: 'mdi-gauge', to:'/'},
    
-        { title: 'আমার প্রাইজবন্ড', icon: 'mdi-gauge', to:'/prizebonds/me', },
+        { title: 'My Prizebonds', icon: 'mdi-gauge', to:'/prizebonds/me', },
       
       ],
    
