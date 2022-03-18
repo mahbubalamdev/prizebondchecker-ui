@@ -15,7 +15,7 @@ export default {
   target: "static",
 
   head: {
-    title: "আবোল-তাবোল",
+    title: "Prizebond Checker",
     htmlAttrs: {
       lang: "en",
     },
