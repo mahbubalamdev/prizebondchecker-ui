@@ -534,7 +534,7 @@ export var search_prizebond = (query) => {
         search_result.push({
           date: result.date,
           draw_number: result.draw_number,
-          prize: "প্রথম পুরস্কারঃ",
+          prize: "First Prize:",
           amount: result.first.amount,
           bond: search_term,
         });
@@ -543,7 +543,7 @@ export var search_prizebond = (query) => {
         search_result.push({
           date: result.date,
           draw_number: result.draw_number,
-          prize: "দ্বিতীয় পুরস্কারঃ",
+          prize: "Second Prize:",
           amount: result.second.amount,
           bond: search_term,
         });
@@ -552,7 +552,7 @@ export var search_prizebond = (query) => {
         search_result.push({
           date: result.date,
           draw_number: result.draw_number,
-          prize: "তৃতীয় পুরস্কারঃ",
+          prize: "Third Prize:",
           amount: result.third.amount,
           bond: search_term,
         });
@@ -561,7 +561,7 @@ export var search_prizebond = (query) => {
         search_result.push({
           date: result.date,
           draw_number: result.draw_number,
-          prize: "চতুর্থ পুরস্কারঃ",
+          prize: "Fourth Prize:",
           amount: result.fourth.amount,
           bond: search_term,
         });
@@ -570,7 +570,7 @@ export var search_prizebond = (query) => {
         search_result.push({
           date: result.date,
           draw_number: result.draw_number,
-          prize: "পঞ্চম পুরস্কারঃ",
+          prize: "Fifth Prize:",
           amount: result.fifth.amount,
           bond: search_term,
         });
