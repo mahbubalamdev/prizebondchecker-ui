@@ -72,7 +72,7 @@ export default {
         responseType: "token",
         redirectUri: "https://prizebondchecker.mahbubalam.dev/login",
         logoutRedirectUri: "https://prizebondchecker.mahbubalam.dev",
-        clientId: "42j6cot5i35l5b793ca00lcogv",
+        clientId: "1dd5n0rdjocrgs1hhsub3eiktv",
         scope: ["email", "openid", "profile"],
         codeChallengeMethod: "S256",
       },
