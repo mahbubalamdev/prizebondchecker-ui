@@ -50,34 +50,34 @@ export default {
     baseURL: "https://prizebondapi.abol-tabol.com/api/v1",
   },
 
-  // auth: {
-  //   strategies: {
-  //     awsCognito: {
-  //       scheme: "oauth2",
-  //       endpoints: {
-  //         authorization: "https://prizebondauth.auth.us-east-1.amazoncognito.com/login",
-  //         token: "https://prizebondauth.auth.us-east-1.amazoncognito.com/oauth2/token",
-  //         userInfo: "https://prizebondauth.auth.us-east-1.amazoncognito.com/oauth2/userInfo",
-  //         logout: "https://prizebondauth.auth.us-east-1.amazoncognito.com/logout",
-  //       },
-  //       token: {
-  //         property: "access_token",
-  //         type: "Bearer",
-  //         maxAge: 3600,
-  //       },
-  //       refreshToken: {
-  //         property: "refresh_token",
-  //         maxAge: 60 * 60 * 24 * 30,
-  //       },
-  //       responseType: "token",
-  //       redirectUri: "https://prizebondchecker.mahbubalam.dev/login",
-  //       logoutRedirectUri: "https://prizebondchecker.mahbubalam.dev",
-  //       clientId: "4r9jo0ftuuj3ucv0r3f05v3ai7",
-  //       scope: ["email", "openid", "profile"],
-  //       codeChallengeMethod: "S256",
-  //     },
-  //   },
-  // },
+  auth: {
+    strategies: {
+      awsCognito: {
+        scheme: "oauth2",
+        endpoints: {
+          authorization: "https://prizebondauth.auth.us-east-1.amazoncognito.com/login",
+          token: "https://prizebondauth.auth.us-east-1.amazoncognito.com/oauth2/token",
+          userInfo: "https://prizebondauth.auth.us-east-1.amazoncognito.com/oauth2/userInfo",
+          logout: "https://prizebondauth.auth.us-east-1.amazoncognito.com/logout",
+        },
+        token: {
+          property: "access_token",
+          type: "Bearer",
+          maxAge: 3600,
+        },
+        refreshToken: {
+          property: "refresh_token",
+          maxAge: 60 * 60 * 24 * 30,
+        },
+        responseType: "token",
+        redirectUri: "https://prizebondchecker.mahbubalam.dev/login",
+        logoutRedirectUri: "https://prizebondchecker.mahbubalam.dev",
+        clientId: "42j6cot5i35l5b793ca00lcogv",
+        scope: ["email", "openid", "profile"],
+        codeChallengeMethod: "S256",
+      },
+    },
+  },
 
   vuetify: {
     customVariables: ["~/assets/variables.scss"],

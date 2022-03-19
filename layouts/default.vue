@@ -141,7 +141,7 @@ export default {
       this.$auth.logout();
     },
     login() {
-      this.$auth.loginWith("awsCognito");
+       this.$auth.loginWith("awsCognito");
     }
   },
   computed: {
